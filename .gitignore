@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+*.tmp
+*.log
+*.pickle
+*.pkl
+/workspace/
+/rawdata/
+/raw_data/
