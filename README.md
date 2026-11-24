@@ -1,4 +1,5 @@
 # Two-scale diagnostic resource allocation for lithium-ion battery SOH trajectory prediction
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24509121.svg)](https://doi.org/10.5281/zenodo.24509121)
 
 **Author:** Junbo Liu  
 **Affiliation:** School of Electrical Engineering, Chongqing University, Chongqing, China  
