@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or derived data, please cite this research archive, the corresponding manuscript, and the original RWTH dataset."
+title: "Two-scale diagnostic-resource allocation for lithium-ion battery SOH trajectory prediction: research code and derived results"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Junbo
+    affiliation: Chongqing University
+version: 1.0.0
+repository-code: "https://github.com/LIUJUNBO-1215/RWTH48-SOH-Trajectory-Prediction"

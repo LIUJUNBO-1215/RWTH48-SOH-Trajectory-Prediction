@@ -1,0 +1,74 @@
+No,HI,Operational definition,Unit
+1,PrefixDuration_s,t_last − t_first,s
+2,V_Mean,mean(V) over finite prefix samples,V
+3,V_Std,"population std(V), ddof = 0",V
+4,V_Median,median(V),V
+5,V_Min,min(V),V
+6,V_Max,max(V),V
+7,V_First,first finite sample of V,V
+8,V_Last,last finite sample of V,V
+9,V_Range,max(V) − min(V),V
+10,I_Mean,mean(I) over finite prefix samples,A
+11,I_Std,"population std(I), ddof = 0",A
+12,I_Median,median(I),A
+13,I_Min,min(I),A
+14,I_Max,max(I),A
+15,I_First,first finite sample of I,A
+16,I_Last,last finite sample of I,A
+17,I_Range,max(I) − min(I),A
+18,Temp_Mean,mean(T) over finite prefix samples,°C
+19,Temp_Std,"population std(T), ddof = 0",°C
+20,Temp_Median,median(T),°C
+21,Temp_Min,min(T),°C
+22,Temp_Max,max(T),°C
+23,Temp_First,first finite sample of T,°C
+24,Temp_Last,last finite sample of T,°C
+25,Temp_Range,max(T) − min(T),°C
+26,P_Mean,mean(P = V × I) over finite prefix samples,W
+27,P_Std,"population std(P = V × I), ddof = 0",W
+28,P_Median,median(P = V × I),W
+29,P_Min,min(P = V × I),W
+30,P_Max,max(P = V × I),W
+31,P_First,first finite sample of P = V × I,W
+32,P_Last,last finite sample of P = V × I,W
+33,P_Range,max(P = V × I) − min(P = V × I),W
+34,V_TimeWeightedMean,trapezoidal ∫ V(t) dt / prefix duration,V
+35,I_TimeWeightedMean,trapezoidal ∫ I(t) dt / prefix duration,A
+36,Temp_TimeWeightedMean,trapezoidal ∫ T(t) dt / prefix duration,°C
+37,P_AreaSigned_Wh,trapezoidal ∫ P(t) dt / 3600,Wh
+38,P_AreaAbs_Wh,trapezoidal ∫ |P(t)| dt / 3600,Wh
+39,PartialThroughput_Ah,trapezoidal ∫ |I(t)| dt / 3600,Ah
+40,PartialDischarge_Ah,"trapezoidal ∫ max(−I(t),0) dt / 3600",Ah
+41,PartialCharge_Ah,"trapezoidal ∫ max(I(t),0) dt / 3600",Ah
+42,RefAhProgress,"PartialDischarge_Ah / Q_ref, frozen",dimensionless
+43,V_Slope_V_per_s,OLS slope of V versus elapsed time,V/s
+44,I_Slope_A_per_s,OLS slope of I versus elapsed time,A/s
+45,Temp_Slope_C_per_min,60 × OLS slope of T versus elapsed time,°C/min
+46,Temp_Rise_C,T_last − T_first,°C
+47,dVdt_Mean,mean(ΔV/Δt) over valid adjacent times,V/s
+48,dVdt_Std,population std(ΔV/Δt),V/s
+49,dVdt_MaxAbs,max |ΔV/Δt|,V/s
+50,dVdt_Last,last valid ΔV/Δt,V/s
+51,dIdt_Mean,mean(ΔI/Δt) over valid adjacent times,A/s
+52,dIdt_Std,population std(ΔI/Δt),A/s
+53,dIdt_MaxAbs,max |ΔI/Δt|,A/s
+54,dIdt_Last,last valid ΔI/Δt,A/s
+55,dTdt_C_per_s_Mean,mean(ΔT/Δt) over valid adjacent times,°C/s
+56,dTdt_C_per_s_Std,population std(ΔT/Δt),°C/s
+57,dTdt_C_per_s_MaxAbs,max |ΔT/Δt|,°C/s
+58,dTdt_C_per_s_Last,last valid ΔT/Δt,°C/s
+59,I_AbsMean,mean(|I|),A
+60,I_RMS,sqrt(mean(I²)),A
+61,I_CV,"population std(I) / max(10⁻⁹, mean(|I|))",dimensionless
+62,I_Entropy,"−Σ p_j ln(p_j), 16 histogram bins; return 0 for n<10 or near-constant I",nats
+63,V_CV,"population std(V) / max(10⁻⁹, |mean(V)|)",dimensionless
+64,Temp_CV,"population std(T) / max(10⁻⁹, |mean(T)|)",dimensionless
+65,Temp_Above30_Ratio,mean(1[T > 30 °C]) over prefix sample count,fraction
+66,Temp_Above35_Ratio,mean(1[T > 35 °C]) over prefix sample count,fraction
+67,R_DynamicSlope_Ohm,OLS slope of V versus I; requires ≥10 finite pairs and std(I)>0.05 A,Ω
+68,VI_Correlation,"Pearson correlation(I,V), under same paired-data eligibility",dimensionless
+69,VBand_3p4_3p5_Ratio,fraction of finite V samples with 3.4 ≤ V < 3.5 V,fraction
+70,VBand_3p5_3p6_Ratio,fraction of finite V samples with 3.5 ≤ V < 3.6 V,fraction
+71,VBand_3p6_3p7_Ratio,fraction of finite V samples with 3.6 ≤ V < 3.7 V,fraction
+72,VBand_3p7_3p8_Ratio,fraction of finite V samples with 3.7 ≤ V < 3.8 V,fraction
+73,VBand_3p8_4p0_Ratio,fraction of finite V samples with 3.8 ≤ V < 4.0 V,fraction

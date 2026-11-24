@@ -1,0 +1,86 @@
+{
+  "Task": "RWTH48 V4.14B Full-Life SOH Timing + Minimum Resource",
+  "CodeVersion": "V414B_FULLLIFE_SOH_TIMING_MINRESOURCE_FIX2",
+  "RMSEThreshold": 0.01,
+  "CycleGrid": [
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    68,
+    72,
+    76,
+    80
+  ],
+  "DiagnosisCounts": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "ProxyLeads": [
+    10,
+    25,
+    50,
+    100,
+    200,
+    300,
+    500,
+    700,
+    900
+  ],
+  "LocalRefineRadius_cycles": 3,
+  "LocalRefineRounds": 2,
+  "TimingFormalRoles": [
+    "BEST_SOURCE_PROXY",
+    "UNIFORM"
+  ],
+  "ResourceTopKs": [
+    1,
+    2,
+    3
+  ],
+  "FixedNodeCounts": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "EventModalities": [
+    "VI",
+    "VIT"
+  ],
+  "FixedTimeModalities": [
+    "V",
+    "VI",
+    "VT",
+    "VIT"
+  ],
+  "EventNodes": [
+    0.05,
+    0.09,
+    0.13
+  ],
+  "FixedTimeNodes": [
+    60.0,
+    120.0,
+    180.0,
+    300.0,
+    450.0,
+    600.0,
+    900.0,
+    1200.0
+  ],
+  "EventReady": null,
+  "FixedTimeReady": null,
+  "ParallelWorkers": 2,
+  "RunID": "V414B_SOH_TIMING_RESOURCE_20260825",
+  "SelectionCostPolicy": "Event duration/channel-seconds use source-46 only during policy selection; held-out actual cost is report-only",
+  "_local_paths_note": "Input paths were cleared for publication; set these paths for your local datasets before attempting to run the historical script."
+}

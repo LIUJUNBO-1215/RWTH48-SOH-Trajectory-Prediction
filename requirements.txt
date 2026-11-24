@@ -1,0 +1,8 @@
+# Recovered from static imports; versions not verified. Includes optional model dependencies.
+lightgbm
+matplotlib
+numpy
+pandas
+scikit-learn
+tensorflow
+xgboost

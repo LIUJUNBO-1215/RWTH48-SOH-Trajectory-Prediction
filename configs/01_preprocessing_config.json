@@ -1,0 +1,31 @@
+{
+  "V4Root": null,
+  "V4Script": null,
+  "OutputRoot": null,
+  "IncludedBatteryCount": 47,
+  "ExcludedBatteries": [
+    "RWTH-028"
+  ],
+  "FrozenFixedTimeNodes_s": [
+    60,
+    120,
+    180,
+    300,
+    450,
+    600,
+    900,
+    1200
+  ],
+  "FrozenRefAhEventNodes": [
+    0.05,
+    0.09,
+    0.13
+  ],
+  "FixedTimeStrategy": "reuse V4 extracted HI",
+  "EventStrategy": "re-extract from V4 clean_timeseries_parts using original V4 functions",
+  "StrictLabelRule": "SOH_LabelUsable==1 and finite SOH_Target_SameCycle",
+  "FeatureMissingRule": "do not globally delete/impute by full data; handle within each LOBO training fold",
+  "OuterValidation": "Leave-One-Battery-Out",
+  "ForbiddenSplit": "random row split",
+  "_local_paths_note": "Input paths were cleared for publication; set these paths for your local datasets before attempting to run the historical script."
+}
